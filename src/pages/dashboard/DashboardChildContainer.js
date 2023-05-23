@@ -16,7 +16,7 @@ function DashboardChildContainer() {
         },
         imagebox: {
             backgroundColor: '#aaa',
-            width: '100%',
+            width: '87%',
             padding: '20px'
         },
         imageleftone: {

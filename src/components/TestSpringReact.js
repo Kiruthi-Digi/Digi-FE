@@ -1,10 +1,10 @@
 import '../App.css';
 import { useEffect, useState } from 'react';
-import { registerUser} from '../apis/RegisterUser';
-import { loginUser } from '../apis/LoginUser';
-import { getUsers } from '../apis/GetUsers';
-import { deleteUser } from '../apis/DeleteUser';
-import { updateUser } from '../apis/UpdateUser';
+import { registerUser} from '../hooks/RegisterUser';
+import { loginUser } from '../hooks/LoginUser';
+import { getUsers } from '../hooks/GetUsers';
+import { deleteUser } from '../hooks/DeleteUser';
+import { updateUser } from '../hooks/UpdateUser';
 
 function App() {
   const [user, setUsers] = useState([]);
