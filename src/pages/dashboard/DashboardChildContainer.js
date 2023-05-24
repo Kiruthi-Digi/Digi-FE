@@ -7,8 +7,10 @@ function DashboardChildContainer() {
         },
         leftside: {
             flex: '30',
-            backgroundColor: '#f1f1f1',
-            padding: '20px'
+           backgroundColor: '#D5C6B6',
+            padding: '20px',
+            borderRadius: '5px',
+            margin:'10px',
         },
         row: {
             display: 'flex',
@@ -30,11 +32,17 @@ function DashboardChildContainer() {
         },
         main: {
             flex: '70',
-            backgroundColor: 'white',
+            backgroundColor: '#D5C6B6',
+            margin:'10px',
+            borderRadius: '5px',
             padding: '20px'
         },
         footer: {
-            backgroundColor: '#aaa',
+            backgroundColor: '#D5C6B6',
+            margin:'10px',
+            borderRadius: '5px',
+            justifyContent: 'center',
+            alignItems: 'center',
             textAlign: 'center',
             background: '#ddd',
             clear: 'hidden',
@@ -42,7 +50,9 @@ function DashboardChildContainer() {
         }
     }
     return (
-        <div>
+        <div
+        style={{background: 'white'}}
+        >
             <Menu />
             <br />
             <div style={styles.row}>

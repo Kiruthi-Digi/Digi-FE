@@ -8,8 +8,8 @@ import ForgotPswPageIndex from "./pages/forgotpsw/ForgotPswPageIndex";
 function App(){
     return(
         //<TestSpringReact/>
-        <LoginPageIndex/>
-        //<DashboardPageIndex/>
+        //<LoginPageIndex/>
+        <DashboardPageIndex/>
         //<RegisterPageIndex/>
         //<ForgotPswPageIndex/>
     );

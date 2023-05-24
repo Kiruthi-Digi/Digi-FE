@@ -7,14 +7,14 @@ function LoginChildContainer() {
     const inputTextmessageProps = {
         labelTxt: 'Email',
         placeholdertxt: '  Email..',
-        inputType:'text'
-      };
+        inputType: 'text'
+    };
 
-      const inputPasswordmessageProps = {
+    const inputPasswordmessageProps = {
         labelTxt: 'Password',
         placeholdertxt: '  Password..',
-        inputType:'password'
-      };
+        inputType: 'password'
+    };
     return (
         <div
             style={{
@@ -24,12 +24,12 @@ function LoginChildContainer() {
                 justifyContent: 'center',
                 alignItems: 'center',
                 flexDirection: 'column',
-                float:'left',
-clear:'none',
+                float: 'left',
+                clear: 'none',
                 fontFamily: 'Montserrat, sans-serif',
                 height: '100vh',
-                width:'100%',
-              padding:'0',
+                width: '100%',
+                padding: '0',
                 margin: '0'
 
             }}
@@ -49,24 +49,24 @@ clear:'none',
 
 
                 }}
-                
+
 
             >
-                <br/>
-                <br/>
-                <Label message={"Login"}/>
-                <br/>
-                <InputBox {...inputTextmessageProps}/>
-                <br/>
-                <InputBox {...inputPasswordmessageProps}/>
-                <br/>
-                <AnchorLink message={"Forgot password?"}/>
-                <br/>
-                <MainButton message={"Login"}/>
-                <br/>
+                <br />
+                <br />
+                <Label message={"Login"} />
+                <br />
+                <InputBox {...inputTextmessageProps} />
+                <br />
+                <InputBox {...inputPasswordmessageProps} />
+                <br />
+                <AnchorLink message={"Forgot password?"} />
+                <br />
+                <MainButton message={"Login"} />
+                <br />
                 <AnchorLink message={"Or sign up"} />
-                <br/>
-                <br/>
+                <br />
+                <br />
             </form>
         </div>
     );

@@ -1,7 +1,7 @@
 function App() {
     const styles = {
         mainanchor: {
-            color: 'black',
+            color: 'darkgreen',
             textAlign: 'center',
             padding: '12px',
             textDecoration: 'none',
@@ -11,14 +11,14 @@ function App() {
             borderRadius: '4px'
         },
         activeanchor: {
-            color: 'black',
+            color: 'white',
             textAlign: 'center',
             padding: '12px',
             textDecoration: 'none',
             fontSize: '18px',
             lineHeight: '25px',
             borderRadius: '4px',
-            backgroundColor:'dodgerblue'
+            backgroundColor:'green'
         },
 
         subanchor: {
@@ -36,7 +36,7 @@ function App() {
         <div class="header"
             style={{
                 overflow: 'hidden',
-                backgroundColor: '#f1f1f1',
+                backgroundColor: '#D5C6B6',
                 padding: '20px 10px'
             }}
         >

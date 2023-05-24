@@ -59,6 +59,7 @@ function RegisterChildContainer() {
 
             >
                 <br />
+                <br />
                 <Label message={"Sign up"} />
                 <br />
                 <InputBox {...inputTextmessageProps} />
@@ -69,7 +70,7 @@ function RegisterChildContainer() {
 
                 <br />
                 <MainButton message={"Register"} />
-
+                <br />
                 <br />
             </form>
         </div>

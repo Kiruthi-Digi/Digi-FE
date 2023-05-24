@@ -54,6 +54,7 @@ function ForgotPswChildContainer() {
                 }}
             >
                 <br />
+                <br />
                 <Label message={"Forgot password?"} />
                 <br />
                 <InputBox {...inputTextmessageProps} />
@@ -63,6 +64,7 @@ function ForgotPswChildContainer() {
                 <InputBox {...inputConfirmPasswordmessageProps} />
                 <br />
                 <MainButton message={"Reset"} />
+                <br />
                 <br />
             </form>
         </div>
