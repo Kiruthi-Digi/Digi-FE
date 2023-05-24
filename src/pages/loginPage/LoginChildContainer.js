@@ -52,12 +52,20 @@ clear:'none',
                 
 
             >
+                <br/>
+                <br/>
                 <Label message={"Login"}/>
+                <br/>
                 <InputBox {...inputTextmessageProps}/>
+                <br/>
                 <InputBox {...inputPasswordmessageProps}/>
+                <br/>
                 <AnchorLink message={"Forgot password?"}/>
+                <br/>
                 <MainButton message={"Login"}/>
+                <br/>
                 <AnchorLink message={"Or sign up"} />
+                <br/>
                 <br/>
             </form>
         </div>

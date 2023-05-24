@@ -2,7 +2,11 @@ function App({labelTxt,placeholdertxt,inputType}) {
     return (
     <div>
         <label>
-            <p>{labelTxt}</p>
+            <p
+             style={{ 
+              margin:'5px'
+            }}
+            >{labelTxt}</p>
             <input type={inputType}
             placeholder={placeholdertxt}
             style={{ 
