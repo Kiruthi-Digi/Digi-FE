@@ -55,7 +55,7 @@ function ForgotPswChildContainer() {
             >
                 <br />
                 <br />
-                <Label message={"Forgot password?"} />
+                <Label message={"Reset password?"} />
                 <br />
                 <InputBox {...inputTextmessageProps} />
                 <br />

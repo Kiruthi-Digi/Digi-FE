@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Label from "../../components/Label";
 import InputBox from "../../components/InputBox";
 import MainButton from "../../components/MainButton";
@@ -60,11 +61,29 @@ function LoginChildContainer() {
                 <br />
                 <InputBox {...inputPasswordmessageProps} />
                 <br />
-                <AnchorLink message={"Forgot password?"} />
+                <div>
+                    <p><b><Link to="forgotpsw"
+                        style={{
+                            color: 'black',
+                            fontSize: '14px',
+                            textDecoration: 'none',
+                            margin: '15px 0'
+                        }}
+                    >Forgot password?</Link> </b></p>
+                </div>
                 <br />
                 <MainButton message={"Login"} />
                 <br />
-                <AnchorLink message={"Or sign up"} />
+                <div>
+                    <p><b>Or <Link to="register"
+                        style={{
+                            color: 'black',
+                            fontSize: '14px',
+                            textDecoration: 'none',
+                            margin: '15px 0'
+                        }}
+                    >sign up</Link> </b></p>
+                </div>
                 <br />
                 <br />
             </form>
