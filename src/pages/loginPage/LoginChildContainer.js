@@ -1,21 +1,54 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useEffect, useState } from 'react';
 import Label from "../../components/Label";
 import InputBox from "../../components/InputBox";
-import MainButton from "../../components/MainButton";
-import AnchorLink from "../../components/AnchorLink";
+import MainButton from "../../components/MainButton"
 
 function LoginChildContainer() {
+    const navigate = useNavigate();
+    const [username, setusername] = useState('');
+    const [password, setpassword] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        // Perform validation
+        if (username === 'Jane' && password === '1234') {
+            // Redirect user to the dashboard
+            window.location.href = '/dashboard';
+        } else {
+            setErrorMessage('Invalid username or password');
+        }
+    };
+
+    const handleUsername = (e) => {
+        setusername(e.target.value);
+    };
+
+    const handlePSW = (e) => {
+        setpassword(e.target.value);
+    };
+
     const inputTextmessageProps = {
         labelTxt: 'Email',
-        placeholdertxt: '  Email..',
-        inputType: 'text'
+        placeholdertxt: 'Email..',
+        inputType: 'text',
+        id: "eml",
+        value: username,
+        onChange: handleUsername
+
     };
 
     const inputPasswordmessageProps = {
         labelTxt: 'Password',
-        placeholdertxt: '  Password..',
-        inputType: 'password'
+        placeholdertxt: 'Password..',
+        inputType: 'password',
+        id: "psw",
+        value: password,
+        onChange: handlePSW
     };
+
     return (
         <div
             style={{
@@ -37,7 +70,6 @@ function LoginChildContainer() {
 
         >
             <form
-
                 style={{
                     backgroundColor: '#FFFFFF',
                     background: 'white',
@@ -47,19 +79,25 @@ function LoginChildContainer() {
                     flexDirection: 'column',
                     padding: '0 50px',
                     borderRadius: '5px',
-
-
                 }}
-
-
+                onSubmit={handleSubmit}
             >
                 <br />
                 <br />
                 <Label message={"Login"} />
+                {errorMessage && <p
+                style={{
+                    color: 'red'
+                }}
+                >{errorMessage}</p>}
                 <br />
-                <InputBox {...inputTextmessageProps} />
+                <InputBox
+                    {...inputTextmessageProps}
+                />
                 <br />
-                <InputBox {...inputPasswordmessageProps} />
+                <InputBox
+                    {...inputPasswordmessageProps}
+                />
                 <br />
                 <div>
                     <p><b><Link to="forgotpsw"

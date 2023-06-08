@@ -7,17 +7,17 @@ function DashboardChildContainer() {
         },
         leftside: {
             flex: '30',
-           backgroundColor: '#D5C6B6',
+            background: '#D5C6B6',
             padding: '20px',
             borderRadius: '5px',
-            margin:'10px',
+            margin: '10px',
         },
         row: {
             display: 'flex',
             flexWrap: 'wrap'
         },
         imagebox: {
-            backgroundColor: '#aaa',
+            background: '#aaa',
             width: '87%',
             padding: '20px'
         },
@@ -32,26 +32,25 @@ function DashboardChildContainer() {
         },
         main: {
             flex: '70',
-            backgroundColor: '#D5C6B6',
-            margin:'10px',
+            background: '#D5C6B6',
+            margin: '10px',
             borderRadius: '5px',
             padding: '20px'
         },
         footer: {
-            backgroundColor: '#D5C6B6',
-            margin:'10px',
+            display:'flex',
+            margin: '10px',
             borderRadius: '5px',
             justifyContent: 'center',
             alignItems: 'center',
             textAlign: 'center',
-            background: '#ddd',
-            clear: 'hidden',
+            background: '#D5C6B6',
             height: '60px'
         }
     }
     return (
         <div
-        style={{background: 'white'}}
+            style={{ background: 'white' }}
         >
             <Menu />
             <br />
@@ -82,14 +81,12 @@ function DashboardChildContainer() {
                     <div style={{ ...styles.imagebox, ...styles.imagemainone }}>Image</div>
                     <h5>Title description, Sep 2, 2024</h5>
                     <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                 </div>
-
-              
             </div>
             <div style={styles.footer}>
                 <h2>Footer</h2>
-                </div>
+            </div>
 
 
         </div>

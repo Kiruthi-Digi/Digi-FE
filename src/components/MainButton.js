@@ -16,7 +16,8 @@ function App(props) {
           transition:'transform 80ms ease-in'
       
         }}
-        //onClick={this.handleClick}
+        type="submit"
+        value="Submit"
         >
           <b>{props.message}</b>
         </button> 

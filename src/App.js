@@ -11,18 +11,15 @@ import RegisterPageIndex from "./pages/register/RegisterPageIndex";
 import ForgotPswPageIndex from "./pages/forgotpsw/ForgotPswPageIndex";
 
 function App() {
-     //<TestSpringReact />
-        //<LoginPageIndex />
-                //<DashboardPageIndex />
-        //<RegisterPageIndex />
-        //<ForgotPswPageIndex />
     return (
 
         <BrowserRouter>
             <Routes>
             <Route index element={<LoginPageIndex />} />
+            <Route path="login" element={<LoginPageIndex />} />
             <Route path="register" element={<RegisterPageIndex/>} />
             <Route path="forgotpsw" element={<ForgotPswPageIndex />} />
+            <Route path="dashboard" element={<DashboardPageIndex />} />
             </Routes >
         </BrowserRouter>
 
